@@ -1,0 +1,30 @@
+{
+  "name": "syn",
+  "version": "0.0.1",
+  "description": "Syn",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint":"eslint",
+    "test": "mocha",
+    "sn":"snapcraft --debug",
+    "deploy:stable": "snapcraft --debug && snapcraft push --release=stable syn_*.snap",
+    "deploy":"snapcraft --debug && snapcraft push --release=stable syn_*.snap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voidp34r/syn.git"
+  },
+  "keywords": [
+    "syn"
+  ],
+  "author": "voidp34r",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voidp34r/syn/issues"
+  },
+  "homepage": "https://github.com/voidp34r/syn#readme",
+  "devDependencies": {
+    "mocha": "^6.2.1"
+  }
+}
