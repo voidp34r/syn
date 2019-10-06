@@ -56,13 +56,14 @@
     "debug": "./bin/run syn",
     "watch": "./bin/run syn",
     "lint": "eslint",
-    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
     "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
     "posttest": "eslint .",
-    "prepack": "oclif-dev manifest && oclif-dev readme",
     "sn": "snapcraft --debug",
+    "postpack": "rm -f oclif.manifest.json",
     "deploy": "snapcraft --debug && snapcraft push --release=stable syn_*.snap",
     "deploy:stable": "snapcraft --debug && snapcraft push --release=stable syn_*.snap",
+    "deploy:beta": "snapcraft release syn 1 beta && snapcraft push --release=beta syn_*.snap",
     "version": "oclif-dev readme && git add README.md"
   }
 }

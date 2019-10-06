@@ -19,7 +19,7 @@ $ npm install -g syn
 $ syn COMMAND
 running command...
 $ syn (-v|--version|version)
-syn/0.0.0 linux-x64 node-v10.16.3
+syn/0.0.1 linux-x64 node-v10.16.3
 $ syn --help [COMMAND]
 USAGE
   $ syn COMMAND
@@ -28,26 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`syn hello`](#syn-hello)
 * [`syn help [COMMAND]`](#syn-help-command)
-
-## `syn hello`
-
-Describe the command here
-
-```
-USAGE
-  $ syn hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src/commands/hello.js](https://github.com/syn/syn/blob/v0.0.0/src/commands/hello.js)_
+* [`syn syn`](#syn-syn)
 
 ## `syn help [COMMAND]`
 
@@ -65,4 +47,22 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
+
+## `syn syn`
+
+Describe the command here
+
+```
+USAGE
+  $ syn syn
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/syn.js](https://github.com/voidp34r/syn/blob/v0.0.1/src/commands/syn.js)_
 <!-- commandsstop -->

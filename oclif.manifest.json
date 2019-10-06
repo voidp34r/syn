@@ -1,0 +1,1 @@
+{"version":"0.0.1","commands":{"syn":{"id":"syn","description":"Describe the command here\n...\nExtra documentation goes here\n","pluginName":"syn","pluginType":"core","aliases":[],"flags":{"name":{"name":"name","type":"option","char":"n","description":"name to print"}},"args":[]}}}
